@@ -1,0 +1,15 @@
+# Ignore development files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.env
+.venv
+.git
+.github
+.gitignore
+README.md
+app.py
+Procfile 
