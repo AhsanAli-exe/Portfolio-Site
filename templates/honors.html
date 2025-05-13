@@ -1,0 +1,313 @@
+{% extends "layout.html" %}
+
+{% block title %}Honors & Achievements - Ahsan Ali{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="section">
+    <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">Honors & Achievements</h1>
+        
+        <div class="row mb-5">
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="about-content">
+                    <h2>Recognition of Excellence</h2>
+                    <p>
+                        Throughout my academic and professional journey, I've been fortunate to receive recognition for my dedication to excellence, innovation, and leadership.
+                    </p>
+                    <p>
+                        These honors not only validate my hard work but also motivate me to continue pushing boundaries and striving for greater achievements.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1586892477838-2b96e85e0f96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Academic Awards" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Academic Honors Section -->
+<section class="section bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Academic Honors</h2>
+        
+        <div class="honors-timeline" data-aos="fade-up">
+            <!-- Gold Medal -->
+            <div class="honor-item" data-aos="fade-up">
+                <div class="honor-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <div class="honor-content">
+                    <h3 class="honor-title">Gold Medalist</h3>
+                    <div class="honor-date">Spring 2024, Fall 2024</div>
+                    <p class="honor-description">
+                        Secured 2× Gold Medals for achieving a perfect 4.00 GPA in the entire AI department, ranking first among all students in the program.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Dean's List -->
+            <div class="honor-item" data-aos="fade-up">
+                <div class="honor-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="honor-content">
+                    <h3 class="honor-title">Dean's List</h3>
+                    <div class="honor-date">Fall 2022, Spring 2023, Fall 2023</div>
+                    <p class="honor-description">
+                        Recognized three times on the prestigious Dean's List for outstanding academic performance, maintaining a GPA above 3.75 each semester.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Rector's List -->
+            <div class="honor-item" data-aos="fade-up">
+                <div class="honor-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="honor-content">
+                    <h3 class="honor-title">Rector's List</h3>
+                    <div class="honor-date">Spring 2023, Fall 2023</div>
+                    <p class="honor-description">
+                        Earned a place on the Rector's List twice for exceptional academic achievement, representing the top 1% of students across all departments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Roles Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Leadership & Extracurricular Activities</h2>
+        
+        <div class="row">
+            <!-- MLSA -->
+            <div class="col-md-6 mb-4" data-aos="fade-right">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="honor-header">
+                            <i class="fab fa-microsoft honor-logo"></i>
+                            <h3 class="card-title">Microsoft Learn Student Ambassadors Society</h3>
+                        </div>
+                        <h4>Co-Head of AI Competitions</h4>
+                        <p class="text-muted">September 2023 - Present</p>
+                        <ul class="honor-list">
+                            <li>Led a team organizing university-wide AI hackathons and competitive events</li>
+                            <li>Developed comprehensive competition frameworks and evaluation metrics</li>
+                            <li>Established partnerships with industry professionals for mentorship opportunities</li>
+                            <li>Created workshops to help students prepare for AI competitions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Literary Club -->
+            <div class="col-md-6 mb-4" data-aos="fade-left">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="honor-header">
+                            <i class="fas fa-book-open honor-logo"></i>
+                            <h3 class="card-title">The Literary Club Society</h3>
+                        </div>
+                        <h4>Active Member</h4>
+                        <p class="text-muted">October 2022 - Present</p>
+                        <ul class="honor-list">
+                            <li>Contributed articles to the university's literary magazine</li>
+                            <li>Participated in critical discussions of literary works and technical papers</li>
+                            <li>Helped organize author talks and reading events</li>
+                            <li>Fostered an environment of intellectual curiosity and creative expression</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CTA Section -->
+<section class="section">
+    <div class="container text-center">
+        <h2 data-aos="fade-up">Let's Work Together</h2>
+        <p data-aos="fade-up">I'm always looking for new challenges and opportunities to apply my skills.</p>
+        <div class="mt-4">
+            <a href="{{ url_for('contact') }}" class="btn mt-3" data-aos="fade-up">Contact Me</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Honors Timeline */
+    .honors-timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    
+    .honor-item {
+        display: flex;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+    
+    .honor-icon {
+        min-width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+        color: white;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0, 119, 204, 0.3);
+    }
+    
+    .honor-content {
+        background-color: var(--card-bg);
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border-color);
+        flex: 1;
+    }
+    
+    .honor-title {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+    
+    .honor-date {
+        color: var(--secondary-color);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .honor-description {
+        color: var(--muted-text-color);
+    }
+    
+    /* Honor Headers */
+    .honor-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .honor-logo {
+        font-size: 2.5rem;
+        color: var(--secondary-color);
+        margin-right: 1rem;
+    }
+    
+    .honor-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .honor-list li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    
+    .honor-list li::before {
+        content: '•';
+        color: var(--secondary-color);
+        position: absolute;
+        left: 0;
+    }
+    
+    /* Competition Cards */
+    .competition-card {
+        height: 100%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .competition-medal {
+        font-size: 3rem;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+    }
+    
+    .competition-position {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Certifications */
+    .certifications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .certification-item {
+        display: flex;
+        align-items: center;
+        background-color: var(--card-bg);
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+    }
+    
+    .certification-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 119, 204, 0.2);
+    }
+    
+    .certification-logo {
+        min-width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5rem;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    .certification-content {
+        flex: 1;
+    }
+    
+    .certification-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .certification-issuer {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+    
+    .certification-date {
+        color: var(--muted-text-color);
+        font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+        .certifications-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}

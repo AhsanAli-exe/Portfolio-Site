@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ahsan Ali - Portfolio{% endblock %}</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Hero Background -->
+    <div class="hero-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span>AA</span>
+        </div>
+        <div class="navbar-links">
+            <a href="{{ url_for('home') }}" class="nav-link {% if request.path == url_for('home') %}active{% endif %}">Home</a>
+            <a href="{{ url_for('about') }}" class="nav-link {% if request.path == url_for('about') %}active{% endif %}">About</a>
+            <a href="{{ url_for('experience') }}" class="nav-link {% if request.path == url_for('experience') %}active{% endif %}">Experience</a>
+            <a href="{{ url_for('projects') }}" class="nav-link {% if request.path == url_for('projects') %}active{% endif %}">Projects</a>
+            <a href="{{ url_for('skills') }}" class="nav-link {% if request.path == url_for('skills') %}active{% endif %}">Skills</a>
+            <a href="{{ url_for('honors') }}" class="nav-link {% if request.path == url_for('honors') %}active{% endif %}">Honors</a>
+            <a href="{{ url_for('contact') }}" class="nav-link {% if request.path == url_for('contact') %}active{% endif %}">Contact</a>
+        </div>
+        <div class="navbar-mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar-mobile-menu">
+            <div class="navbar-mobile-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="{{ url_for('home') }}" class="mobile-nav-link">Home</a>
+            <a href="{{ url_for('about') }}" class="mobile-nav-link">About</a>
+            <a href="{{ url_for('experience') }}" class="mobile-nav-link">Experience</a>
+            <a href="{{ url_for('projects') }}" class="mobile-nav-link">Projects</a>
+            <a href="{{ url_for('skills') }}" class="mobile-nav-link">Skills</a>
+            <a href="{{ url_for('honors') }}" class="mobile-nav-link">Honors</a>
+            <a href="{{ url_for('contact') }}" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ahsan--ali" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AhsanAli-exe" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ahsanalimemon2002@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Ahsan Ali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html> 

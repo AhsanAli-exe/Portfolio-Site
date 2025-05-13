@@ -1,0 +1,226 @@
+{% extends "layout.html" %}
+
+{% block title %}About Me - Ahsan Ali{% endblock %}
+
+{% block extra_css %}
+<style>
+    .social-link-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 12px 20px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .social-link-box:hover {
+        background-color: rgba(0, 119, 204, 0.2);
+        transform: translateX(5px);
+    }
+    
+    .social-link {
+        display: block;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+    
+    .social-link i {
+        color: var(--secondary-color);
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">About Me</h1>
+        
+        <div class="about-section">
+            <div class="about-content" data-aos="fade-right">
+                <h2>Hello, I'm Ahsan Ali</h2>
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at FAST National University of Computer and Emerging Sciences, specializing in Artificial Intelligence. With a perfect CGPA of 3.88/4.0, I'm passionate about leveraging technology to create innovative solutions.
+                    </p>
+                    <p>
+                        My journey in technology began during my A-levels at Pakistan International School Jeddah, where I developed a strong foundation in mathematics and science. Since then, I've been constantly expanding my knowledge in various domains of computer science, with a particular focus on AI, machine learning, and software development.
+                    </p>
+                    <p>
+                        Currently serving as an Agentic AI Intern at Wellness Innovations and a Research Associate at FAST NUCES University, I'm gaining hands-on experience with cutting-edge technologies while contributing to meaningful projects that have real-world impact.
+                    </p>
+                    <p>
+                        Beyond my academic pursuits, I'm an avid superhero enthusiast and gamer. I believe that just like superheroes use their unique abilities to solve complex problems, we as developers and engineers can use our skills to create solutions that make a difference in the world.
+                    </p>
+                </div>
+                
+                <div class="social-links mt-4">
+                    <div class="social-link-box">
+                        <a href="mailto:ahsanalimemon2002@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i> ahsanalimemon2002@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="social-link-box">
+                        <a href="https://linkedin.com/in/ahsan--ali" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> linkedin.com/in/ahsan--ali
+                        </a>
+                    </div>
+                    
+                    <div class="social-link-box">
+                        <a href="https://github.com/AhsanAli-exe" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> github.com/AhsanAli-exe
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-img" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1569748130764-3fed0c102c59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ahsan Ali">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="section bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">My Education</h2>
+        
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>FAST National University of Computer and Emerging Sciences</h3>
+                    <div class="timeline-date">August 2022 - May 2026</div>
+                    <p>Bachelors in Artificial Intelligence</p>
+                    <p><strong>CGPA:</strong> 3.88/4.0</p>
+                    <p><strong>Achievements:</strong> Gold Medalist, Dean's List, Rector's List</p>
+                    <p><strong>Key Courses:</strong> Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Data Structures & Algorithms</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Pakistan International School Jeddah PISJES</h3>
+                    <div class="timeline-date">August 2020 - May 2022</div>
+                    <p>Cambridge International A-levels</p>
+                    <p><strong>Subjects:</strong> Mathematics, Physics, Chemistry, Computer Science</p>
+                    <p><strong>Activities:</strong> Science Club, Computing Society</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Philosophy Section -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h2>My Philosophy</h2>
+                <p>I believe in the power of technology to transform lives and solve complex problems. Every line of code I write is guided by three core principles:</p>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Innovation</h3>
+                        <p>Pushing boundaries and thinking outside the box to create novel solutions to challenging problems.</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Efficiency</h3>
+                        <p>Optimizing algorithms and systems to deliver fast, reliable, and scalable solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Impact</h3>
+                        <p>Focusing on projects that create meaningful impact and improve people's lives.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-left">
+                <h2>Why Superheroes & Tech?</h2>
+                <p>My passion for superheroes and technology might seem disconnected at first, but they're deeply intertwined in my perspective:</p>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <p>Just as Captain America uses his shield to protect the innocent, I use my programming skills to create secure, robust applications.</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <p>Like Iron Man constantly improving his suit, I continuously learn and adopt new technologies to enhance my development capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <p>Thor's hammer Mjolnir is powerful but requires worthiness; similarly, powerful AI tools require ethical responsibility in their application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fun Facts Section -->
+<section class="section bg-dark">
+    <div class="container text-center">
+        <h2 class="mb-5" data-aos="fade-up">Fun Facts About Me</h2>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="zoom-in">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-gamepad fa-3x mb-3" style="color: var(--primary-color);"></i>
+                        <h3 class="card-title">Gamer</h3>
+                        <p>Avid gamer who enjoys strategic and team-based games.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-book fa-3x mb-3" style="color: var(--primary-color);"></i>
+                        <h3 class="card-title">Reader</h3>
+                        <p>Enjoy reading sci-fi and technical literature in my free time.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-coffee fa-3x mb-3" style="color: var(--primary-color);"></i>
+                        <h3 class="card-title">Coffee Lover</h3>
+                        <p>Can't start coding without a good cup of coffee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section">
+    <div class="container text-center">
+        <h2 data-aos="fade-up">Want to Know More?</h2>
+        <p data-aos="fade-up">Check out my experience, projects, or get in touch directly!</p>
+        <div class="mt-4">
+            <a href="{{ url_for('experience') }}" class="btn mx-2" data-aos="fade-up">My Experience</a>
+            <a href="{{ url_for('projects') }}" class="btn mx-2" data-aos="fade-up">My Projects</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-outline mx-2" data-aos="fade-up">Contact Me</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

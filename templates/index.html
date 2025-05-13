@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+{% block title %}Ahsan Ali - Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css">
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1 class="hero-title" data-typed="true">Ahsan Ali</h1>
+        <p class="hero-subtitle">AI Engineer | Developer | Researcher</p>
+        <p class="hero-description">
+            FAST NUCES University student with a passion for AI, machine learning, and software development.
+            Creating innovative solutions to real-world problems.
+        </p>
+        <div class="hero-btns">
+            <a href="{{ url_for('about') }}" class="btn">About Me</a>
+            <a href="{{ url_for('projects') }}" class="btn btn-outline">View Projects</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Quick About Section -->
+<section class="section bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h2>About Me</h2>
+                <p>I'm a Computer Science student at FAST NUCES University with a focus on Artificial Intelligence. My passion lies in developing innovative solutions using cutting-edge technologies.</p>
+                <p>With experience in research, teaching, and software development, I bring a diverse skill set to every project I undertake.</p>
+                <a href="{{ url_for('about') }}" class="btn mt-3">Learn More</a>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Education</h3>
+                        <p><strong>FAST National University</strong> - BS in Artificial Intelligence</p>
+                        <p><strong>CGPA:</strong> 3.88/4.0</p>
+                        <p><strong>Duration:</strong> 2022 - 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Featured Projects</h2>
+        
+        <div class="swiper projects-swiper">
+            <div class="swiper-wrapper">
+                <!-- Boolean Retrieval Model -->
+                <div class="swiper-slide">
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Boolean Retrieval Model" class="project-img">
+                        <div class="project-content">
+                            <h3 class="card-title">Boolean Retrieval Model</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">NLTK</span>
+                                <span class="project-tag">Streamlit</span>
+                            </div>
+                            <p>Implemented a Boolean Retrieval Model using inverted and positional indexing for efficient information retrieval.</p>
+                            <a href="https://k224036boolean.streamlit.app/" target="_blank" class="btn btn-sm mt-3">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vector Space Model -->
+                <div class="swiper-slide">
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Vector Space Model" class="project-img">
+                        <div class="project-content">
+                            <h3 class="card-title">Vector Space Model</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Lemmatizer</span>
+                                <span class="project-tag">TF-IDF</span>
+                            </div>
+                            <p>Enhanced information retrieval system with Vector Space Model using TF-IDF vectors and cosine similarity.</p>
+                            <a href="https://vectorspacemodel-ahsan.streamlit.app/" target="_blank" class="btn btn-sm mt-3">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ontology Based Course Teacher -->
+                <div class="swiper-slide">
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Ontology Based Course Teacher" class="project-img">
+                        <div class="project-content">
+                            <h3 class="card-title">Ontology Course Assignment</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">RDF</span>
+                                <span class="project-tag">SPARQL</span>
+                            </div>
+                            <p>Designed an ontology system to match qualified teachers with appropriate courses based on expertise.</p>
+                            <a href="https://ontologycourseteacher.streamlit.app/" target="_blank" class="btn btn-sm mt-3">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie Recommender System -->
+                <div class="swiper-slide">
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Movie Recommender System" class="project-img">
+                        <div class="project-content">
+                            <h3 class="card-title">Movie Recommender System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Collaborative Filtering</span>
+                                <span class="project-tag">OMDB API</span>
+                            </div>
+                            <p>Developed a movie recommender system with collaborative filtering and content-based approaches.</p>
+                            <a href="https://movierecsystem.streamlit.app/" target="_blank" class="btn btn-sm mt-3">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('projects') }}" class="btn btn-outline">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section Preview -->
+<section class="section bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Experience Highlights</h2>
+        
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Agentic AI Intern</h3>
+                    <div class="timeline-date">March 2025 - Present</div>
+                    <p>Wellness Innovations (USA)</p>
+                    <p>Developing automated database agents using LLMs and implementing reflection agents with LangGraph.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Research Associate</h3>
+                    <div class="timeline-date">February 2025 - Present</div>
+                    <p>FAST NUCES University</p>
+                    <p>Conducting research on multi-camera coordination and implementing video analytics with OpenCV.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('experience') }}" class="btn btn-outline">View Full Experience</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="section">
+    <div class="container text-center">
+        <h2 data-aos="fade-up">Let's Connect</h2>
+        <p data-aos="fade-up">Interested in working together or have a question? Feel free to reach out!</p>
+        <a href="{{ url_for('contact') }}" class="btn mt-3" data-aos="fade-up">Contact Me</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+{% endblock %}
