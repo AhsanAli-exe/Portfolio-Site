@@ -30,5 +30,8 @@ def contact():
 def honors():
     return render_template('honors.html')
 
-# This line is important for Vercel
+
 app = app.wsgi_app
+
+
+
